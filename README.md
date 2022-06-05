@@ -90,19 +90,46 @@ contains all genes in yeast that had significant LiP peptides
   
 ## Output files  
   
-AVG_Num_of_Crossings_final.png  
-AVG_Num_of_Crossings_final.svg  
-AVG_Num_of_Crossings_normL_final.png  
-AVG_Num_of_Crossings_normL_final.svg  
-AVG_Num_of_Entanglements_final.png  
-AVG_Num_of_Entanglements_final.svg  
-AVG_Num_of_Entanglements_normL_final.png  
-AVG_Num_of_Entanglements_normL_final.svg  
-Frac_Entanglement_Presenet_final.png  
-Frac_Entanglement_Presenet_final.svg  
-bootstrap_results_AllLiP_X_MSCntrl_final.txt  
-bootstrap_results_ntCP_X_MSCntrl_final.txt  
-bootstrap_results_ntSP_X_MSCntrl_final.txt  
-bootstrap_results_ntSP_minus_LiP_X_MSCntrl_final.txt  
-bootstrap_results_ntSPwLiP_X_MSCntrl_final.txt  
-
+A PNG and SVG file are created for each of the five metrics analyzed showing comparison of datasets in input files  
+  
+### fraction of genes in a dataset that have an entanglement present  
+    
+    Frac_Entanglement_Presenet_final.png  
+    Frac_Entanglement_Presenet_final.svg  
+    
+  
+### average number of unique entanglements identified for each gene in a particular dataset  
+    
+    AVG_Num_of_Entanglements_final.png  
+    AVG_Num_of_Entanglements_final.svg  
+    
+  
+### average number of crossings amongts the unique entanglements idetified for each gene in a dataset  
+    
+    AVG_Num_of_Crossings_final.png  
+    AVG_Num_of_Crossings_final.svg  
+    
+  
+### average number of unique entanglements identified for each gene in a particular dataset normalized by the gene Length  
+    
+    AVG_Num_of_Entanglements_normL_final.png  
+    AVG_Num_of_Entanglements_normL_final.svg  
+    
+  
+### average number of crossings amongts the unique entanglements idetified for each gene in a dataset normalized by the gene Length  
+    
+    AVG_Num_of_Crossings_normL_final.png  
+    AVG_Num_of_Crossings_normL_final.svg  
+    
+  
+### raw statistical data files resulting from bootstrapping and permutation testing  
+For each data compared to the control a file containing the bootstraped 95% confidence intervals and p-values determined from permutation testing the differences between sample metric means  
+100,000 bootstrapped iterations and permutations are used   
+    
+    bootstrap_results_AllLiP_X_PME_final.txt  
+    bootstrap_results_ntCP_X_PME_final.txt  
+    bootstrap_results_ntSP_X_PME_final.txt  
+    bootstrap_results_ntSP_minus_LiP_X_PME_final.txt  
+    bootstrap_results_ntSPwLiP_X_PME_final.txt  
+    
+  

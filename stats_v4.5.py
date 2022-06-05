@@ -199,7 +199,7 @@ print(f'\nntSP_minus_LiP_data after removal of genes with no structures: {ntSP_m
 
 #define combonations of data set to analyze differences in
 combos = [(ntSP_data, cntrl_data), (ntCP_data, cntrl_data), (ntSPwLiP_data, cntrl_data), (AllLiP_data, cntrl_data), (ntSP_minus_LiP_data, cntrl_data)]
-combos_labels = ['ntSP_X_MSCntrl', 'ntCP_X_MSCntrl', 'ntSPwLiP_X_MSCntrl', 'AllLiP_X_MSCntrl', 'ntSP_minus_LiP_X_MSCntrl']
+combos_labels = ['ntSP_X_PME', 'ntCP_X_PME', 'ntSPwLiP_X_PME', 'AllLiP_X_PME', 'ntSP_minus_LiP_X_PME']
 
 #bootstrap confidence intervals and permutation testg the difference between treatment and control sets
 bootstrap_results = bootstrap_combos(combos, ent_data, combos_labels, 100000)
