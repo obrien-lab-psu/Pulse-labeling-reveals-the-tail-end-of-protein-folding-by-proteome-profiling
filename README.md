@@ -7,19 +7,20 @@ It contains the following information:
 3. output files in the outpfiles/ directory.  
 
 ## Usage  
-'''python stats_v4.5.py [1]     
-[1] = tag for output files    
-'''  
+  
+    python stats_v4.5.py [1]   
+    [1] = tag for output files    
+
   
 ## Input files
   
 inpfiles/NEW_clustered_mapped_GE_rep_chain_summary_v2.csv  
-| contains the following columns  
+contains the following columns:  
 0. geneidx - arbitraty counter  
 1. Uniprot gene ID  
 2. number of unique entanglements in the representative structure  
 3. average number of crossings in the representative structure  
-4. length of canonical sequence (amino acids) |  
+4. length of canonical sequence (amino acids)   
 
   
 inpfiles/genes_with_representative_proteins.txt  
