@@ -18,9 +18,10 @@ It contains the following information:
   
 ## Input files
   
-inpfiles/NEW_clustered_mapped_GE_rep_chain_summary_v2.csv  
+### inpfiles/NEW_clustered_mapped_GE_rep_chain_summary_v2.csv  
 contains entanglement information regarding all genes in yeast with a high quality representative PDB  
-contains the following columns:   
+
+    contains the following columns:   
 
     0. geneidx - arbitraty counter  
     1. Uniprot gene ID  
@@ -29,52 +30,59 @@ contains the following columns:
     4. length of canonical sequence (amino acids)   
 
   
-inpfiles/genes_with_representative_proteins.txt  
+### inpfiles/genes_with_representative_proteins.txt  
 contains information on the genes in the yeast proteome that have representative structures  
-the file has the following columns:   
+    
+    containst the following columns:   
     
     0. Uniprot gene ID
     1. representative PDB
     3. representative chain
 
-inpfiles/CTRLProteinsidentifiedbyMSthatarenotntSPorntCP_UniProt_genes.txt  
+### inpfiles/CTRLProteinsidentifiedbyMSthatarenotntSPorntCP_UniProt_genes.txt  
 contains control genes in yeast identified by MS that are not part of ntSP or ntCP sets  
-contains the following columns:   
+    
+    containst the following columns:   
     
     0. Uniprot gene ID
         
 
-inpfiles/ntSPnewlytranslatedandthermo-sensitiveproteins_UniProt_genes.txt  
+### inpfiles/ntSPnewlytranslatedandthermo-sensitiveproteins_UniProt_genes.txt  
 contains genes in yeast that are newly translated and temperature sensative ntSP  
-contains the following columns:   
+    
+    containst the following columns:   
     
     0. Uniprot gene ID
         
 
-inpfiles/ntCPmoreinpelletwhennewtranslated_UniProt_genes.txt  
+### inpfiles/ntCPmoreinpelletwhennewtranslated_UniProt_genes.txt  
 contains genes in yeast with more in pellet when new translated ntCP  
-contains the following columns:   
+    
+    containst the following columns:   
     
     0. Uniprot gene ID
         
 
-inpfiles/ntSP_minus_LiP_genes.txt  
+### inpfiles/ntSP_minus_LiP_genes.txt  
 contains genes in yeast ntSP set minus those with significant LiP peptides  
-contains the following columns:   
+    
+    containst the following columns:   
     
     0. Uniprot gene ID
         
 
-inpfiles/ntSPthathaveLiPpeptides_UniProt_genes.txt  
+### inpfiles/ntSPthathaveLiPpeptides_UniProt_genes.txt  
 contains genes in yeast ntSP set that have significant LiP peptides  
-contains the following columns:   
+    
+    containst the following columns:   
     
     0. Uniprot gene ID
         
 
-inpfiles/AllLiP_genes.txt  
+### inpfiles/AllLiP_genes.txt  
 contains all genes in yeast that had significant LiP peptides  
-contains the following columns:   
+    
+    containst the following columns:   
     
     0. Uniprot gene ID
         
