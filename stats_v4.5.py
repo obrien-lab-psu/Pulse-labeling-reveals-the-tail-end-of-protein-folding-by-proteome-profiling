@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-import sys,os
+import sys
 import numpy as np
-from itertools import combinations
 from scipy.stats import bootstrap
 from scipy.stats import permutation_test
 import matplotlib.pyplot as plt
 from statsmodels.stats.multitest import fdrcorrection
-from scipy.stats import pearsonr, fisher_exact
+from scipy.stats import fisher_exact
 
 global basename
 basename = sys.argv[1]
