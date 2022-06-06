@@ -1,4 +1,4 @@
-# Pulse-labeling-reveals-the-tail-end-of-protein-folding-by-proteome-profiling
+# Pulse-labeling-reveals-the-tail-end-of-protein-folding-by-proteome-profiling data repository for figures 6C and 7F
 This is a code repository for "Pulse labeling reveals the tail end of protein folding by proteome profiling" manuscript.  
 It contains the following information:  
   
@@ -63,14 +63,6 @@ contains genes in yeast with more in pellet when new translated ntCP
     0. Uniprot gene ID
         
 
-### inpfiles/ntSP_minus_LiP_genes.txt  
-contains genes in yeast ntSP set minus those with significant LiP peptides  
-    
-    containst the following columns:   
-    
-    0. Uniprot gene ID
-        
-
 ### inpfiles/ntSPthathaveLiPpeptides_UniProt_genes.txt  
 contains genes in yeast ntSP set that have significant LiP peptides  
     
@@ -128,8 +120,7 @@ For each data compared to the control a file containing the bootstraped 95% conf
     
     bootstrap_results_AllLiP_X_PME_final.txt  
     bootstrap_results_ntCP_X_PME_final.txt  
-    bootstrap_results_ntSP_X_PME_final.txt  
-    bootstrap_results_ntSP_minus_LiP_X_PME_final.txt  
-    bootstrap_results_ntSPwLiP_X_PME_final.txt  
+    bootstrap_results_ntSP_X_PME_final.txt (Fig 6C) 
+    bootstrap_results_ntSPwLiP_X_PME_final.txt (Fig 7F) 
     
   

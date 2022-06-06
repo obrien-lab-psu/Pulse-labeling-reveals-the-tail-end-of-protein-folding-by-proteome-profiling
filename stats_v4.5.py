@@ -192,14 +192,10 @@ print(f'ntSPwLiP_data: {ntSPwLiP_data} {ntSPwLiP_data.shape}\n')
 ntSPwLiP_data = np.asarray([x for x in ntSPwLiP_data if x in genes_in_VDB])
 print(f'\nntSPwLiP_data after removal of genes with no structures: {ntSPwLiP_data.shape}\n')
 
-ntSP_minus_LiP_data = np.loadtxt('inpfiles/ntSP_minus_LiP_genes.txt', dtype='O')
-print(f'ntSP_minus_LiP_data: {ntSP_minus_LiP_data} {ntSP_minus_LiP_data.shape}\n')
-ntSP_minus_LiP_data = np.asarray([x for x in ntSP_minus_LiP_data if x in genes_in_VDB])
-print(f'\nntSP_minus_LiP_data after removal of genes with no structures: {ntSP_minus_LiP_data.shape}\n')
 
 #define combonations of data set to analyze differences in
-combos = [(ntSP_data, cntrl_data), (ntCP_data, cntrl_data), (ntSPwLiP_data, cntrl_data), (AllLiP_data, cntrl_data), (ntSP_minus_LiP_data, cntrl_data)]
-combos_labels = ['ntSP_X_PME', 'ntCP_X_PME', 'ntSPwLiP_X_PME', 'AllLiP_X_PME', 'ntSP_minus_LiP_X_PME']
+combos = [(ntSP_data, cntrl_data), (ntCP_data, cntrl_data), (ntSPwLiP_data, cntrl_data), (AllLiP_data, cntrl_data)]
+combos_labels = ['ntSP_X_PME', 'ntCP_X_PME', 'ntSPwLiP_X_PME', 'AllLiP_X_PME']
 
 #bootstrap confidence intervals and permutation testg the difference between treatment and control sets
 bootstrap_results = bootstrap_combos(combos, ent_data, combos_labels, 100000)
